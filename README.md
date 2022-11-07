@@ -156,10 +156,6 @@ These users will be randomly selected in Starbucks to offer unbiased insights on
 
 <img src="fidelitydiagram.jpeg" alt="drawing" style="width:300px;"/>
 
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 <style>
     .heatMap {
         width: 100%;
