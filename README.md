@@ -2,7 +2,7 @@
 
 *Team Coffee Language Processor* | Bruinsma, Chi, Feliciano, Li, Paden
 
-HuggingFace Model Located Here: [Build your own drink parser!](https://huggingface.co/cbruinsm/en_Coff_Ev1)
+HuggingFace Model Located Here: [Test our parser or use this API in your product!](https://huggingface.co/cbruinsm/en_Coff_Ev1)
 
 ## Who we are
 
