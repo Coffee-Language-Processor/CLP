@@ -1,0 +1,124 @@
+{
+  "lang":"en",
+  "name":"pipeline",
+  "version":"0.0.0",
+  "spacy_version":">=3.4.3,<3.5.0",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"63673a792",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null,
+    "mode":"default"
+  },
+  "labels":{
+    "tok2vec":[
+
+    ],
+    "ner":[
+      "Anti",
+      "drink",
+      "extra",
+      "milk",
+      "milk texture",
+      "pump quantity",
+      "roast",
+      "shot quality",
+      "shot quantity",
+      "size",
+      "syrup",
+      "temperature",
+      "toppings"
+    ]
+  },
+  "pipeline":[
+    "tok2vec",
+    "ner"
+  ],
+  "components":[
+    "tok2vec",
+    "ner"
+  ],
+  "disabled":[
+
+  ],
+  "performance":{
+    "ents_f":0.9986052999,
+    "ents_p":0.9986052999,
+    "ents_r":0.9986052999,
+    "ents_per_type":{
+      "milk":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "drink":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "size":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "temperature":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "syrup":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "roast":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "toppings":{
+        "p":0.96875,
+        "r":1.0,
+        "f":0.9841269841
+      },
+      "shot quality":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "shot quantity":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "Anti":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "milk texture":{
+        "p":1.0,
+        "r":0.8333333333,
+        "f":0.9090909091
+      },
+      "extra":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "pump quantity":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      }
+    },
+    "tok2vec_loss":165.7493640212,
+    "ner_loss":175.9501249996
+  }
+}
