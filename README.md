@@ -8,10 +8,11 @@ HuggingFace Model Located Here: [Test our parser or use this API in your product
 
 Iris
   
-  -  Front End Coder
+  - Front End Coder
   - Major/Minor: CS, Legal Studies
   - Skills: Product Management, Editing, Figma
   - Fun Fact: I throw a stick for fun (javelin)  
+
 - Dustin
   
   - UI/UX Designer
@@ -31,7 +32,7 @@ Jack
   - Back End Coder
   - Major/minor: Computer Science, Statistics
   - Skills: Data Mining and Machine Learning
-  - Fun Fact: Experiences Blidness
+  - Fun Fact: Experiences Blindness
   
 Chris
 
