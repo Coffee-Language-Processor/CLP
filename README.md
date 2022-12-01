@@ -2,6 +2,8 @@
 
 *Team Coffee Language Processor* | Bruinsma, Chi, Feliciano, Li, Paden
 
+HuggingFace Model Located Here: [Build your own drink parser!](https://huggingface.co/cbruinsm/en_Coff_Ev1)
+
 ## Who we are
 
 Iris
@@ -60,10 +62,6 @@ We have specifically chosen to interview Starbucks employees and managers to und
 
 For this project, our aim is to translate real-world user-dictated Starbucks orders into a normalized form that can be passed to order placement services such as Grubhub. Below is a high level overview of our system. This section will explain our plans for implementation for each step. 
 
-<img src="FinalProjectProposal.jpeg"
-     alt="Markdown Monster icon"
-     style=";" />
-
 As we intend for this application to be cross platform compatible, we plan on using a Flutter frontend and a Firebase backend. This will ensure that our developer team does not need to code on two separate frameworks for future iOS and Android deployment. As we anticipate orders to be generally placed on mobile devices vs desktop devices, we will be making a mobile app and not a desktop application. As speech ordering could be less convenient on desktops than mobile devices, we do not anticipate this to be an issue.
 
 
@@ -91,24 +89,6 @@ For this, we plan on implementing record linkage, which can be achieved by using
 
 Table of *Actual* Starbucks Sizes
 
-
-## Table Styling in Markdown
-
-<style>
-    .heatMap {
-        width: 70%;
-        text-align: center;
-    }
-    .heatMap th {
-        background: white;
-        word-wrap: break-word;
-        text-align: center;
-    }
-    .heatMap tr:nth-child(1) { background: gold; }
-</style>
-
-<div class="heatMap">
-
 | Size |  Cosine Similarity with Extracted size "large" |
 -------|------------------------------------------------|
 Venti  | 0.7801                                         |
@@ -127,63 +107,4 @@ This process will be repeated for each of the principal components of a drink an
 
 ## Timeline and deliverable
 
-
-Since we are doing this in an Agile manner the who team owns every deliverable regardless. 
-
-| Start Date | End Date| Deliverables | Assignee |
-|------------|---------|--------------|----------|
-| 10/23      | 10/29   | 1 Low fidelity wireframe and paper prototype <br><br> Finalize and release need-finding survey <br><br> Starbucks drinker user and barista research, conclusion on principal components of drinks | Dustin,Iris <br><br> Jack,Jeffrey,Chris <br><br> Chris, Jack, Iris | 
-| 10/30 | 11/5 | Finish front-end-display(no backend communication required) <br><br> Summary Report on Need finding <br><br> Collect Training Data (real world order) | Jeffery, Dustin <br><br> Iris <br><br> Chris, Jack |
-| 11/13 | 11/19 | Train Model <br><br> Create Website | Jack, Chris <br><br> Dustin, Iris, Jeffrey |
-| 11/20 | 11/26 | Connect Model to front end <br><br> Finish Poster |  Jack, Chris <br><br> Dustin, Iris, Jeffrey|
-| 11/27 | 11/29 | Finish Documentation and practice fro final presentation | Chris, Dustin, Iris, Jack, Jeffrey |
-
-
-
-## Prototyping 
-
-<img src="breadthdepth.jpeg" alt="drawing" style="width:300px;"/>
-<br>
-
-Each iteration of the prototype will be tested by 10 participants. To ensure each sample is generalizable to the larger Starbucks-consumer population, users will be selected based on diverse representations of genders, accents, ages, and order preferences.
-
-Longitudinal study (5 users):
-These users will be testing each prototype iteration throughout the semester to identify improvement and obstacles in user experience over time.
-
-Cross-sectional study (5 users):
-These users will be randomly selected in Starbucks to offer unbiased insights on each prototype iteration’s experience.
-
-
-<img src="fidelitydiagram.jpeg" alt="drawing" style="width:300px;"/>
-
-<style>
-    .heatMap {
-        width: 100%;
-        text-align: center;
-    }
-    .heatMap th {
-        background: green;
-        word-wrap: break-word;
-        text-align: center;
-    }
-    .heatMap tr:nth-child(1) { background: white; }
-</style>
-
-<div class="heatMap">
-
-| Iteration | Type | Testing Environment | Evaluation |
-|-----------|------|---------------------|------------|
-| 1         | Paper Prototype <br> - Low Fidelity <br> - high breadth <br>  - Medium Depth | - Requires 3 team members (computer, facilitator, and observer) to meet with each tester. <br> - Detailed notes measuring time and feedback will be documented | - Rate how experience compares to traditional ordering <br> - Explain what users liked and disliked <br> - What additional features would users like to see. |
-| 2 | Interactive Wireframe <br> - Medium Fidelity <br> - High Breadth <br> - Greater depth | - Two team members (audio computer/facilitator, observer) meet with each user <br> - Test ordering via wizard-of-oz style audio interaction and Figma wireframe on iPad   | - Design aesthetics <br> - Interaction reaction time while performing tasks<br> - Task Flow <br> - Clarity and usability of features <br> - User Feedback |
-| 3| Full-function Audio and Tactile Interface<br> - High Fidelity <br> - Full Breadth <br> - Full Depth  | - Observe what users interacting with fulling functional product in Starbucks | - Evaluating experiences',accessibility, functionality, efficiency, interaction, and satisfaction <br> - Follow-up feedback after completing experience and receiving their drink |
-</div>
-
-## Alternative Solution
-
-1. Instead of addressing the problem between the baristas and the customers we could try to make it easier to make online orders. There is a huge issue with Grubhub orders getting backed up and it leaves the baristas to have to shut down online orders, if there was a better solution to get Grubhub orders from the phone to the table it would also solve the problem of communication errors, ie. Instead of printing an entire order on a small sheet of paper, the order should be split into each section so it is easier to complete the order instead of having one person having to split up the order manually.
-
-2. Coffee is often lost in translation, having a way to unify the meaning of coffee would completely simplify the process for baristas. There are many ways to interpret what a regular coffee is or any generalization of terms, if there was a way to translate it into an universal meaning it would simplify the process of making coffee for people. ie. If someone orders a ‘regular coffee,’ does that mean milk and sugar or just black coffee, if there was a way to identify where someone was from and then translate it to what the customer deems as a ‘regular coffee’ there would be no reason for the barista to need to interpret what the customer means and both parties would be happy.
-
-3. To cut out the middle man, there should be a way to instantly get your order sent to the espresso machine and have it make the coffee itself. This relieves a lot of stress on the baristas to keep up with the demand, each coffee making machine that chains use have source code that can be altered and changed. If it could connect to Grubhub through a third party and then make the coffee itself as long as the barista puts the cup where it’s supposed to be, this saves a little bit of time per order. Instead of having the barista push the buttons, it saves a couple seconds each time but a couple seconds each time adds up to a lot of time.
-
-
+We designed this for our CSC 212 class but will continue to work on it outside of class. 
