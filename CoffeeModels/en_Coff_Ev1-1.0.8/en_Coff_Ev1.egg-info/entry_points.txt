@@ -1,3 +1,0 @@
-[spacy_models]
-en_Coff_Ev1 = en_Coff_Ev1
-

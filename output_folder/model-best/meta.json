@@ -1,11 +1,11 @@
 {
   "lang":"en",
   "name":"Coff_Ev1",
-  "version":"1.1.0",
+  "version":"1.4.0",
   "spacy_version":">=3.4.3,<3.5.0",
-  "description":"A natural language processor API for coffee drinks in all forms",
-  "author":"Chris Bruinsma,Iris Chi,Jack Felciano,Jeffrey Li,Dustin Paden",
-  "email":"christopher.j.bruinsma@outlook.com",
+  "description":"Last version was terrible, so it had to be updated",
+  "author":"",
+  "email":"",
   "url":"",
   "license":"",
   "spacy_git_version":"63673a792",
@@ -22,10 +22,16 @@
     ],
     "ner":[
       "Anti",
+      "Blended",
+      "Brew Style",
+      "Coffee Varietal",
+      "add-on",
       "drink",
       "extra",
+      "hot breakfast",
       "milk",
       "milk texture",
+      "pastry",
       "pump quantity",
       "roast",
       "shot quality",
@@ -33,7 +39,8 @@
       "size",
       "syrup",
       "temperature",
-      "toppings"
+      "toppings",
+      "upside-down"
     ]
   },
   "pipeline":[
@@ -48,77 +55,112 @@
 
   ],
   "performance":{
-    "ents_f":0.9910748933,
-    "ents_p":0.9906904577,
-    "ents_r":0.9914596273,
+    "ents_f":0.9762673249,
+    "ents_p":0.9794285714,
+    "ents_r":0.9731264194,
     "ents_per_type":{
-      "roast":{
-        "p":1.0,
-        "r":0.9523809524,
-        "f":0.9756097561
-      },
-      "drink":{
-        "p":0.9904988124,
-        "r":0.9928571429,
-        "f":0.9916765755
-      },
-      "toppings":{
-        "p":0.9827586207,
-        "r":1.0,
-        "f":0.9913043478
-      },
       "size":{
-        "p":0.9966777409,
-        "r":0.9966777409,
-        "f":0.9966777409
+        "p":0.9911894273,
+        "r":0.974025974,
+        "f":0.9825327511
       },
       "temperature":{
-        "p":1.0,
-        "r":0.9906542056,
-        "f":0.9953051643
+        "p":0.9945652174,
+        "r":0.9631578947,
+        "f":0.9786096257
       },
       "syrup":{
-        "p":0.9901960784,
-        "r":1.0,
-        "f":0.9950738916
+        "p":0.9766081871,
+        "r":0.9823529412,
+        "f":0.9794721408
       },
-      "shot quality":{
-        "p":0.9375,
-        "r":0.9375,
-        "f":0.9375
+      "drink":{
+        "p":0.9792960663,
+        "r":0.9742533471,
+        "f":0.9767681982
       },
       "milk":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
+        "p":0.9806451613,
+        "r":0.9806451613,
+        "f":0.9806451613
       },
-      "shot quantity":{
-        "p":0.9333333333,
-        "r":0.8235294118,
-        "f":0.875
-      },
-      "extra":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
+      "toppings":{
+        "p":0.9831932773,
+        "r":0.975,
+        "f":0.9790794979
       },
       "Anti":{
+        "p":0.9761904762,
+        "r":0.9318181818,
+        "f":0.9534883721
+      },
+      "Blended":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       },
-      "pump quantity":{
-        "p":0.9285714286,
+      "extra":{
+        "p":0.7692307692,
         "r":1.0,
-        "f":0.962962963
+        "f":0.8695652174
+      },
+      "add-on":{
+        "p":1.0,
+        "r":0.9636363636,
+        "f":0.9814814815
+      },
+      "shot quantity":{
+        "p":0.9428571429,
+        "r":0.9428571429,
+        "f":0.9428571429
+      },
+      "Brew Style":{
+        "p":0.9714285714,
+        "r":1.0,
+        "f":0.9855072464
       },
       "milk texture":{
+        "p":0.8888888889,
+        "r":1.0,
+        "f":0.9411764706
+      },
+      "pump quantity":{
         "p":1.0,
-        "r":0.8571428571,
-        "f":0.9230769231
+        "r":0.9117647059,
+        "f":0.9538461538
+      },
+      "Coffee Varietal":{
+        "p":0.9411764706,
+        "r":1.0,
+        "f":0.9696969697
+      },
+      "roast":{
+        "p":1.0,
+        "r":0.9130434783,
+        "f":0.9545454545
+      },
+      "pastry":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "hot breakfast":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "shot quality":{
+        "p":0.9565217391,
+        "r":0.9565217391,
+        "f":0.9565217391
+      },
+      "upside-down":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
       }
     },
-    "tok2vec_loss":153.0695758335,
-    "ner_loss":1462.7512133333
+    "tok2vec_loss":972.4425642409,
+    "ner_loss":4971.6640156421
   }
 }
