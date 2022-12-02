@@ -1,10 +1,10 @@
 {
   "lang":"en",
   "name":"Coff_Ev1",
-  "version":"1.0.6",
+  "version":"1.1.0",
   "spacy_version":">=3.4.3,<3.5.0",
-  "description":"A natural language processor for coffee orders",
-  "author":"Chris Bruinsma, Iris Chi, Juan (Jack) Feliciano, Jeffry Li, Dustin Paden",
+  "description":"A natural language processor API for coffee drinks in all forms",
+  "author":"Chris Bruinsma,Iris Chi,Jack Felciano,Jeffrey Li,Dustin Paden",
   "email":"christopher.j.bruinsma@outlook.com",
   "url":"",
   "license":"",
@@ -48,51 +48,56 @@
 
   ],
   "performance":{
-    "ents_f":0.9986052999,
-    "ents_p":0.9986052999,
-    "ents_r":0.9986052999,
+    "ents_f":0.9910748933,
+    "ents_p":0.9906904577,
+    "ents_r":0.9914596273,
     "ents_per_type":{
+      "roast":{
+        "p":1.0,
+        "r":0.9523809524,
+        "f":0.9756097561
+      },
+      "drink":{
+        "p":0.9904988124,
+        "r":0.9928571429,
+        "f":0.9916765755
+      },
+      "toppings":{
+        "p":0.9827586207,
+        "r":1.0,
+        "f":0.9913043478
+      },
+      "size":{
+        "p":0.9966777409,
+        "r":0.9966777409,
+        "f":0.9966777409
+      },
+      "temperature":{
+        "p":1.0,
+        "r":0.9906542056,
+        "f":0.9953051643
+      },
+      "syrup":{
+        "p":0.9901960784,
+        "r":1.0,
+        "f":0.9950738916
+      },
+      "shot quality":{
+        "p":0.9375,
+        "r":0.9375,
+        "f":0.9375
+      },
       "milk":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       },
-      "drink":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
-      "size":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
-      "temperature":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
-      "syrup":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
-      "roast":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
-      "toppings":{
-        "p":0.96875,
-        "r":1.0,
-        "f":0.9841269841
-      },
-      "shot quality":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
       "shot quantity":{
+        "p":0.9333333333,
+        "r":0.8235294118,
+        "f":0.875
+      },
+      "extra":{
         "p":1.0,
         "r":1.0,
         "f":1.0
@@ -102,23 +107,18 @@
         "r":1.0,
         "f":1.0
       },
+      "pump quantity":{
+        "p":0.9285714286,
+        "r":1.0,
+        "f":0.962962963
+      },
       "milk texture":{
         "p":1.0,
-        "r":0.8333333333,
-        "f":0.9090909091
-      },
-      "extra":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
-      "pump quantity":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
+        "r":0.8571428571,
+        "f":0.9230769231
       }
     },
-    "tok2vec_loss":165.7493640212,
-    "ner_loss":175.9501249996
+    "tok2vec_loss":153.0695758335,
+    "ner_loss":1462.7512133333
   }
 }
