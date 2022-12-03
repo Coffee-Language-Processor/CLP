@@ -1,0 +1,6 @@
+module Try {
+  umbrella header "Try-umbrella.h"
+
+  export *
+  module * { export * }
+}

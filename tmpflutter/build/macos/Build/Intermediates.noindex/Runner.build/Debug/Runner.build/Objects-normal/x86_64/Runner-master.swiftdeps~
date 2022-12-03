@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
+options: "26e68b36a23aa8cfac8a36eccadabd76b3c28d98e7ff49873c5cda5405202bc8"
+build_start_time: [1670083447, 628878116]
+build_end_time: [1670083447, 775367975]
+inputs:
+  "/Users/chris/CLP/tmpflutter/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1670083345, 231671810]
+  "/Users/chris/CLP/tmpflutter/macos/Runner/AppDelegate.swift": !private [1669209796, 0]
+  "/Users/chris/CLP/tmpflutter/macos/Runner/MainFlutterWindow.swift": !private [1669209796, 0]

@@ -1,0 +1,12 @@
+module Try {
+  umbrella header "Try-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module Try.Swift {
+  header "/Users/chris/CLP/tmpflutter/build/ios/Debug-iphonesimulator/Try/Swift Compatibility Header/Try-Swift.h"
+  requires objc
+}

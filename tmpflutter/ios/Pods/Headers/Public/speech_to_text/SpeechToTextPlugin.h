@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/speech_to_text/ios/Classes/SpeechToTextPlugin.h
